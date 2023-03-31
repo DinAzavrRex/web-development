@@ -1,0 +1,18 @@
+<div class="content" style="height:1000px;">
+  <div fxLayout="row wrap" fxLayoutGap="16px grid" >
+    <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.sm="33%"
+         infinite-scroll
+         [infiniteScrollDistance]="2"
+         [infiniteScrollThrottle]="1000"
+         (scrolled)="onScroll()"
+         *ngFor="let meteo of curTemps">
+         
+         <div class="card">
+          <p> latitude: {{meteos.latitude}} </p>
+         <p>timezone: {{meteos.timezone}} </p>
+         <p class="">{{meteo.time}}</p>
+         <p class="text-pink-500">{{meteo.temperature}}  {{meteos.hourly_units.temperature_2m}}</p>
+         </div> 
+    </div>
+  </div>
+</div>

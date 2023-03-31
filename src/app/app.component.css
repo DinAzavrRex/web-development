@@ -1,0 +1,15 @@
+:host {
+  overflow-y: auto;
+}
+
+.card {
+  margin: 0 auto;
+  background-color :rgb(161, 232, 165);
+  width: auto;
+  height: auto;
+  color:rgb(10, 56, 3);
+  
+}
+.card p {
+  font-size: 15px;
+}
